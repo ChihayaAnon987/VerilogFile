@@ -33,7 +33,7 @@ module state_machine(
 
     localparam BAUD_RATE = 9600;
     localparam CLOCK_FREQ = 100000000;
-    localparam DIVIDER = CLOCK_FREQ / BAUD_RATE;
+    localparam DIVIDER=CLOCK_FREQ / BAUD_RATE;
     localparam DELAY_CNT_MAX = CLOCK_FREQ / 10;
 
     reg [1:0] current_state, next_state;
