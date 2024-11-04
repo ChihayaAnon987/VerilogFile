@@ -1,7 +1,7 @@
 `timescale 1ns / 1ps
 //////////////////////////////////////////////////////////////////////////////////
 // Company: 
-// Engineer: 
+// Engineer: ChihayaAnon987
 // 
 // Create Date: 2024/10/29 13:42:36
 // Design Name: 
@@ -33,7 +33,7 @@ module state_machine(
 
     localparam BAUD_RATE = 9600;
     localparam CLOCK_FREQ = 100000000;
-    localparam DIVIDER=CLOCK_FREQ / BAUD_RATE;
+    localparam DIVIDER = CLOCK_FREQ / BAUD_RATE;
     localparam DELAY_CNT_MAX = CLOCK_FREQ / 10;
 
     reg [1:0] current_state, next_state;
