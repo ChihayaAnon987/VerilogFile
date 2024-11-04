@@ -1,0 +1,20 @@
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+Test case :a5 start
+Test case a5 success
+
+Test case :3c start
+Test case 3c success
+
+Test case :ff start
+Test case ff success
+
+Test case :00 start
+Test case 00 success
+
+Test case :5a start
+Test case 5a success
+
+All tests passed successfully!
+Uart baud rate =        9600, freq divider =       10416
+$finish called at time : 5510103350 ps : File "D:/VerilogFile/uart_send/uart_send.srcs/sim_1/new/uart_send_tb.v" Line 99
