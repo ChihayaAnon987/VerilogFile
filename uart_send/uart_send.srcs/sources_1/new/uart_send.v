@@ -113,7 +113,5 @@ module uart_send(
         end
     end
 
- 
-
 
 endmodule
