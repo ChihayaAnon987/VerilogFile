@@ -73,7 +73,7 @@ module uart_send(
     end
     
     // 状态寄存器：同步时序电路，更新当前状态
-    always @(posedge clk) begin
+    always @(posedge clk or posedge rst) begin
         if (rst) begin
             current_state <= IDLE; // 初始状态为IDLE
             dout <= 1'b1;          // 初始高电平
