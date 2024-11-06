@@ -1,4 +1,0 @@
-INFO: [VRFC 10-2263] Analyzing Verilog file "D:/VerilogFile/uart_recv/uart_recv.srcs/sources_1/new/uart_recv.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module uart_recv
-INFO: [VRFC 10-2263] Analyzing Verilog file "D:/VerilogFile/uart_recv/uart_recv.srcs/sim_1/new/uart_recv_tb.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module uart_receive_tb
