@@ -1,0 +1,14 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../CompLab.srcs/sources_1/new/debounce.v" \
+"../../../../CompLab.srcs/sources_1/new/digit_display.v" \
+"../../../../CompLab.srcs/sources_1/new/string_match.v" \
+"../../../../CompLab.srcs/sources_1/new/uart_recv.v" \
+"../../../../CompLab.srcs/sources_1/new/uart_send.v" \
+"../../../../CompLab.srcs/sources_1/new/CompLab.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

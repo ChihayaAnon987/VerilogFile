@@ -1,0 +1,8 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/VerilogFile/CompLab/CompLab.srcs/sources_1/new/string_match.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module string_match
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/VerilogFile/CompLab/CompLab.srcs/sources_1/new/uart_recv.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module uart_recv
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/VerilogFile/CompLab/CompLab.srcs/sources_1/new/uart_send.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module uart_send
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/VerilogFile/CompLab/CompLab.srcs/sim_1/new/testbench.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module testbench

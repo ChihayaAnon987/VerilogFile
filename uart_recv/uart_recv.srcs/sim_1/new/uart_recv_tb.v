@@ -30,11 +30,11 @@ module uart_receive_tb();
     initial begin
         $display("Uart baud rate = %d, freq divider = %d",BAUD_RATE, DIVIDER);
 
-        test_data[0] = 8'h55;  // 0101_0101
-        test_data[1] = 8'hA3;  // 1010_0011
-        test_data[2] = 8'h0F;  // 0000_1111
-        test_data[3] = 8'hF0;  // 1111_0000
-        test_data[4] = 8'h33;  // 0011_0011
+        test_data[0] = 8'h73;  // 0101_0101
+        test_data[1] = 8'h74;  // 1010_0011
+        test_data[2] = 8'h61;  // 0000_1111
+        test_data[3] = 8'h72;  // 1111_0000
+        test_data[4] = 8'h74;  // 0011_0011
         test_data[5] = 8'hCC;  // 1100_1100
         test_data[6] = 8'hFF;  // 1111_1111
         test_data[7] = 8'h00;  // 0000_0000

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenRun Id="impl_1" LaunchPart="xc7a100tfgg484-1" LaunchTime="1730895269">
+  <File Type="BITSTR-BMM" Name="CompLab_bd.bmm"/>
   <File Type="ROUTE-PWR" Name="CompLab_power_routed.rpt"/>
   <File Type="PA-TCL" Name="CompLab.tcl"/>
-  <File Type="BITSTR-BMM" Name="CompLab_bd.bmm"/>
+  <File Type="OPT-DCP" Name="CompLab_opt.dcp"/>
   <File Type="ROUTE-PWR-SUM" Name="CompLab_power_summary_routed.pb"/>
   <File Type="REPORTS-TCL" Name="CompLab_reports.tcl"/>
-  <File Type="OPT-DCP" Name="CompLab_opt.dcp"/>
   <File Type="OPT-DRC" Name="CompLab_drc_opted.rpt"/>
   <File Type="OPT-HWDEF" Name="CompLab.hwdef"/>
   <File Type="PWROPT-DCP" Name="CompLab_pwropt.dcp"/>
@@ -25,19 +25,20 @@
   <File Type="ROUTE-BLACKBOX-DCP" Name="CompLab_routed_bb.dcp"/>
   <File Type="ROUTE-DRC" Name="CompLab_drc_routed.rpt"/>
   <File Type="ROUTE-DRC-PB" Name="CompLab_drc_routed.pb"/>
-  <File Type="ROUTE-DRC-RPX" Name="CompLab_drc_routed.rpx"/>
   <File Type="BITSTR-LTX" Name="CompLab.ltx"/>
-  <File Type="ROUTE-METHODOLOGY-DRC" Name="CompLab_methodology_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-RPX" Name="CompLab_drc_routed.rpx"/>
   <File Type="BITSTR-MMI" Name="CompLab.mmi"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="CompLab_methodology_drc_routed.rpt"/>
   <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="CompLab_methodology_drc_routed.rpx"/>
-  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="CompLab_methodology_drc_routed.pb"/>
   <File Type="BITSTR-SYSDEF" Name="CompLab.sysdef"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="CompLab_methodology_drc_routed.pb"/>
   <File Type="ROUTE-PWR-RPX" Name="CompLab_power_routed.rpx"/>
   <File Type="ROUTE-STATUS" Name="CompLab_route_status.rpt"/>
   <File Type="ROUTE-STATUS-PB" Name="CompLab_route_status.pb"/>
   <File Type="ROUTE-TIMINGSUMMARY" Name="CompLab_timing_summary_routed.rpt"/>
   <File Type="ROUTE-TIMING-PB" Name="CompLab_timing_summary_routed.pb"/>
   <File Type="ROUTE-TIMING-RPX" Name="CompLab_timing_summary_routed.rpx"/>
+  <File Type="RDI-RDI" Name="CompLab.vdi"/>
   <File Type="ROUTE-CLK" Name="CompLab_clock_utilization_routed.rpt"/>
   <File Type="ROUTE-BUS-SKEW" Name="CompLab_bus_skew_routed.rpt"/>
   <File Type="ROUTE-BUS-SKEW-PB" Name="CompLab_bus_skew_routed.pb"/>
@@ -48,7 +49,6 @@
   <File Type="BITSTR-RBT" Name="CompLab.rbt"/>
   <File Type="BITSTR-NKY" Name="CompLab.nky"/>
   <File Type="BG-DRC" Name="CompLab.drc"/>
-  <File Type="RDI-RDI" Name="CompLab.vdi"/>
   <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
