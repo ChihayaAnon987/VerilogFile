@@ -46,15 +46,6 @@ module CompLab(
         .button_rising_edge(button3_rising_edge)
     );
     
-
-    /*uart_send uart_send(
-        .clk(clk),
-        .rst(button1_rising_edge),
-        .data(sw),
-        .valid(button3_rising_edge),
-        .dout(dout)
-    );*/
-
     digit_display digit_display(
         .clk(clk),
         .rst(button1_rising_edge),
