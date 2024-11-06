@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a100tfgg484-1" LaunchTime="1730628289">
+<GenRun Id="synth_1" LaunchPart="xc7a100tfgg484-1" LaunchTime="1730857769">
   <File Type="PA-TCL" Name="led_display_ctrl.tcl"/>
   <File Type="RDS-PROPCONSTRS" Name="led_display_ctrl_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="led_display_ctrl_reports.tcl"/>
@@ -43,9 +43,7 @@
     </Config>
   </FileSet>
   <Strategy Version="1" Minor="2">
-    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018">
-      <Desc>Vivado Synthesis Defaults</Desc>
-    </StratHandle>
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018"/>
     <Step Id="synth_design"/>
   </Strategy>
 </GenRun>

@@ -41,7 +41,7 @@ EAStep()
 }
 
 # pre-commands:
-/bin/touch .init_design.begin.rst
+/bin/touch .route_design.begin.rst
 EAStep vivado -log led_display_ctrl.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source led_display_ctrl.tcl -notrace
 
 

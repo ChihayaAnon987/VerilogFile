@@ -23,7 +23,7 @@ eval( EAInclude(ISEJScriptLib) );
 
 
 // pre-commands:
-ISETouchFile( "init_design", "begin" );
+ISETouchFile( "route_design", "begin" );
 ISEStep( "vivado",
          "-log led_display_ctrl.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source led_display_ctrl.tcl -notrace" );
 

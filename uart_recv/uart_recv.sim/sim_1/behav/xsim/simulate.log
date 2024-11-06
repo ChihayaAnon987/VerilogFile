@@ -1,0 +1,15 @@
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+Uart baud rate =        9600, freq divider =       10416
+Test case: 0 success, Received expected data = 0x55
+Test case: 1 success, Received expected data = 0xa3
+Test case: 2 success, Received expected data = 0x0f
+Test case: 3 success, Received expected data = 0xf0
+Test case: 4 success, Received expected data = 0x33
+Test case: 5 success, Received expected data = 0xcc
+Test case: 6 success, Received expected data = 0xff
+Test case: 7 success, Received expected data = 0x00
+Test case: 8 success, Received expected data = 0x5a
+Test case: 9 success, Received expected data = 0xa5
+All test cases passed.
+$finish called at time : 10417305 ns : File "D:/VerilogFile/uart_recv/uart_recv.srcs/sim_1/new/uart_recv_tb.v" Line 73

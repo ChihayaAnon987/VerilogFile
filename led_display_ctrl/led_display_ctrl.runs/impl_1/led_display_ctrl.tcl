@@ -61,73 +61,13 @@ proc step_failed { step } {
 }
 
 
-start_step init_design
-set ACTIVE_STEP init_design
-set rc [catch {
-  create_msg_db init_design.pb
-  create_project -in_memory -part xc7a100tfgg484-1
-  set_property design_mode GateLvl [current_fileset]
-  set_param project.singleFileAddWarning.threshold 0
-  set_property webtalk.parent_dir D:/VerilogFile/led_display_ctrl/led_display_ctrl.cache/wt [current_project]
-  set_property parent.project_path D:/VerilogFile/led_display_ctrl/led_display_ctrl.xpr [current_project]
-  set_property ip_output_repo D:/VerilogFile/led_display_ctrl/led_display_ctrl.cache/ip [current_project]
-  set_property ip_cache_permissions {read write} [current_project]
-  add_files -quiet D:/VerilogFile/led_display_ctrl/led_display_ctrl.runs/synth_1/led_display_ctrl.dcp
-  read_xdc D:/VerilogFile/led_display_ctrl/led_display_ctrl.srcs/constrs_1/new/pin.xdc
-  link_design -top led_display_ctrl -part xc7a100tfgg484-1
-  close_msg_db -file init_design.pb
-} RESULT]
-if {$rc} {
-  step_failed init_design
-  return -code error $RESULT
-} else {
-  end_step init_design
-  unset ACTIVE_STEP 
-}
-
-start_step opt_design
-set ACTIVE_STEP opt_design
-set rc [catch {
-  create_msg_db opt_design.pb
-  opt_design 
-  write_checkpoint -force led_display_ctrl_opt.dcp
-  create_report "impl_1_opt_report_drc_0" "report_drc -file led_display_ctrl_drc_opted.rpt -pb led_display_ctrl_drc_opted.pb -rpx led_display_ctrl_drc_opted.rpx"
-  close_msg_db -file opt_design.pb
-} RESULT]
-if {$rc} {
-  step_failed opt_design
-  return -code error $RESULT
-} else {
-  end_step opt_design
-  unset ACTIVE_STEP 
-}
-
-start_step place_design
-set ACTIVE_STEP place_design
-set rc [catch {
-  create_msg_db place_design.pb
-  if { [llength [get_debug_cores -quiet] ] > 0 }  { 
-    implement_debug_core 
-  } 
-  place_design 
-  write_checkpoint -force led_display_ctrl_placed.dcp
-  create_report "impl_1_place_report_io_0" "report_io -file led_display_ctrl_io_placed.rpt"
-  create_report "impl_1_place_report_utilization_0" "report_utilization -file led_display_ctrl_utilization_placed.rpt -pb led_display_ctrl_utilization_placed.pb"
-  create_report "impl_1_place_report_control_sets_0" "report_control_sets -verbose -file led_display_ctrl_control_sets_placed.rpt"
-  close_msg_db -file place_design.pb
-} RESULT]
-if {$rc} {
-  step_failed place_design
-  return -code error $RESULT
-} else {
-  end_step place_design
-  unset ACTIVE_STEP 
-}
-
 start_step route_design
 set ACTIVE_STEP route_design
 set rc [catch {
   create_msg_db route_design.pb
+  set_param xicom.use_bs_reader 1
+  open_checkpoint led_display_ctrl_placed.dcp
+  set_property webtalk.parent_dir D:/VerilogFile/led_display_ctrl/led_display_ctrl.cache/wt [current_project]
   route_design 
   write_checkpoint -force led_display_ctrl_routed.dcp
   create_report "impl_1_route_report_drc_0" "report_drc -file led_display_ctrl_drc_routed.rpt -pb led_display_ctrl_drc_routed.pb -rpx led_display_ctrl_drc_routed.rpx"

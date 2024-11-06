@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
-| Date         : Sun Nov  3 18:07:39 2024
+| Date         : Wed Nov  6 14:03:22 2024
 | Host         : MeYoKo running 64-bit major release  (build 9200)
 | Command      : report_timing_summary -max_paths 10 -file state_machine_timing_summary_routed.rpt -pb state_machine_timing_summary_routed.pb -rpx state_machine_timing_summary_routed.rpx -warn_on_violation
 | Design       : state_machine
