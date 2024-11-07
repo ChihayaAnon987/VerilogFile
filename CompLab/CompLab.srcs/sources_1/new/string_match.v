@@ -27,10 +27,10 @@ module string_match(
     output wire             dout           // UART 发送引脚
 );
 
-    (*mark_debug = "true"*)reg [7:0]       buffer[15:0]; // 字符缓冲区，最多16个字符
+    reg [7:0]       buffer[15:0]; // 字符缓冲区，最多16个字符
     wire [7:0]      data;          // 接收的字符数据
     wire            valid;         // 数据有效标志
-    (*mark_debug = "true"*)reg [7:0]       response;      // 回复数据：1、2、0
+    reg [7:0]       response;      // 回复数据：1、2、0
 
     // UART 接收模块实例化
     uart_recv uart_recv(
@@ -89,19 +89,19 @@ module string_match(
             response <= 8'h30;  // 复位时清空响应
         end 
         else begin
-                if ((buffer[4] == 8'h73 || buffer[4] == 8'h53) &&            // 's' or 'S'
-                    (buffer[3] == 8'h74 || buffer[3] == 8'h54) &&            // 't' or 'T'
-                    (buffer[2] == 8'h61 || buffer[2] == 8'h41) &&            // 'a' or 'A'
-                    (buffer[1] == 8'h72 || buffer[1] == 8'h52) &&            // 'r' or 'R'
-                    (buffer[0] == 8'h74 || buffer[0] == 8'h54) &&  valid)    // 't' or 'T'
+                if ((buffer[4] == 8'h73) &&            // 's' or 'S'
+                    (buffer[3] == 8'h74) &&            // 't' or 'T'
+                    (buffer[2] == 8'h61) &&            // 'a' or 'A'
+                    (buffer[1] == 8'h72) &&            // 'r' or 'R'
+                    (buffer[0] == 8'h74) && valid)    // 't' or 'T'
                 begin
                     response <= 8'h31;
                 end
 
-                else if ((buffer[3] == 8'h73 || buffer[3] == 8'h53) &&           // 's' or 'S'
-                        (buffer[2] == 8'h74 || buffer[2] == 8'h54) &&            // 't' or 'T'
-                        (buffer[1] == 8'h6F || buffer[1] == 8'h4F) &&            // 'o' or 'O'
-                        (buffer[0] == 8'h70 || buffer[0] == 8'h50) &&  valid)    // 'p' or 'P'
+                else if ((buffer[3] == 8'h73) &&           // 's' or 'S'
+                        (buffer[2] == 8'h74) &&            // 't' or 'T'
+                        (buffer[1] == 8'h6F) &&            // 'o' or 'O'
+                        (buffer[0] == 8'h70) && valid)    // 'p' or 'P'
                 begin
                     response <= 8'h32;
                 end

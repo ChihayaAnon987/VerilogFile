@@ -24,7 +24,7 @@ module uart_recv(
     input                   clk,
     input                   rst,
     input                   din,        // connect to usb_uart rx pin
-    (*mark_debug = "true"*)output reg              valid,      // indicates data is valid （logic high (1)）, last one clock
+    output reg              valid,      // indicates data is valid （logic high (1)）, last one clock
     output reg [7:0]        data
 );
 

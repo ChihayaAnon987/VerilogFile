@@ -1,30 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7a100tfgg484-1" LaunchTime="1730895269">
+<GenRun Id="impl_1" LaunchPart="xc7a100tfgg484-1" LaunchTime="1730941506">
   <File Type="BITSTR-BMM" Name="CompLab_bd.bmm"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="CompLab_methodology_drc_opted.rpt"/>
+  <File Type="INIT-TIMING" Name="CompLab_timing_summary_init.rpt"/>
   <File Type="ROUTE-PWR" Name="CompLab_power_routed.rpt"/>
   <File Type="PA-TCL" Name="CompLab.tcl"/>
+  <File Type="OPT-TIMING" Name="CompLab_timing_summary_opted.rpt"/>
   <File Type="OPT-DCP" Name="CompLab_opt.dcp"/>
   <File Type="ROUTE-PWR-SUM" Name="CompLab_power_summary_routed.pb"/>
   <File Type="REPORTS-TCL" Name="CompLab_reports.tcl"/>
   <File Type="OPT-DRC" Name="CompLab_drc_opted.rpt"/>
   <File Type="OPT-HWDEF" Name="CompLab.hwdef"/>
   <File Type="PWROPT-DCP" Name="CompLab_pwropt.dcp"/>
+  <File Type="PWROPT-DRC" Name="CompLab_drc_pwropted.rpt"/>
+  <File Type="PWROPT-TIMING" Name="CompLab_timing_summary_pwropted.rpt"/>
   <File Type="PLACE-DCP" Name="CompLab_placed.dcp"/>
   <File Type="PLACE-IO" Name="CompLab_io_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="CompLab_clock_utilization_placed.rpt"/>
   <File Type="PLACE-UTIL" Name="CompLab_utilization_placed.rpt"/>
   <File Type="PLACE-UTIL-PB" Name="CompLab_utilization_placed.pb"/>
   <File Type="PLACE-CTRL" Name="CompLab_control_sets_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="CompLab_incremental_reuse_placed.rpt"/>
   <File Type="PLACE-PRE-SIMILARITY" Name="CompLab_incremental_reuse_pre_placed.rpt"/>
   <File Type="BG-BGN" Name="CompLab.bgn"/>
+  <File Type="PLACE-TIMING" Name="CompLab_timing_summary_placed.rpt"/>
   <File Type="POSTPLACE-PWROPT-DCP" Name="CompLab_postplace_pwropt.dcp"/>
   <File Type="BG-BIN" Name="CompLab.bin"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="CompLab_timing_summary_postplace_pwropted.rpt"/>
   <File Type="PHYSOPT-DCP" Name="CompLab_physopt.dcp"/>
+  <File Type="PHYSOPT-DRC" Name="CompLab_drc_physopted.rpt"/>
   <File Type="BITSTR-MSK" Name="CompLab.msk"/>
+  <File Type="PHYSOPT-TIMING" Name="CompLab_timing_summary_physopted.rpt"/>
   <File Type="ROUTE-ERROR-DCP" Name="CompLab_routed_error.dcp"/>
   <File Type="ROUTE-DCP" Name="CompLab_routed.dcp"/>
   <File Type="ROUTE-BLACKBOX-DCP" Name="CompLab_routed_bb.dcp"/>
   <File Type="ROUTE-DRC" Name="CompLab_drc_routed.rpt"/>
   <File Type="ROUTE-DRC-PB" Name="CompLab_drc_routed.pb"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
   <File Type="BITSTR-LTX" Name="CompLab.ltx"/>
   <File Type="ROUTE-DRC-RPX" Name="CompLab_drc_routed.rpx"/>
   <File Type="BITSTR-MMI" Name="CompLab.mmi"/>
@@ -38,17 +50,24 @@
   <File Type="ROUTE-TIMINGSUMMARY" Name="CompLab_timing_summary_routed.rpt"/>
   <File Type="ROUTE-TIMING-PB" Name="CompLab_timing_summary_routed.pb"/>
   <File Type="ROUTE-TIMING-RPX" Name="CompLab_timing_summary_routed.rpx"/>
-  <File Type="RDI-RDI" Name="CompLab.vdi"/>
+  <File Type="ROUTE-SIMILARITY" Name="CompLab_incremental_reuse_routed.rpt"/>
   <File Type="ROUTE-CLK" Name="CompLab_clock_utilization_routed.rpt"/>
   <File Type="ROUTE-BUS-SKEW" Name="CompLab_bus_skew_routed.rpt"/>
   <File Type="ROUTE-BUS-SKEW-PB" Name="CompLab_bus_skew_routed.pb"/>
   <File Type="ROUTE-BUS-SKEW-RPX" Name="CompLab_bus_skew_routed.rpx"/>
   <File Type="POSTROUTE-PHYSOPT-DCP" Name="CompLab_postroute_physopt.dcp"/>
   <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="CompLab_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="CompLab_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="CompLab_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="CompLab_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="CompLab_bus_skew_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="CompLab_bus_skew_postroute_physopted.pb"/>
   <File Type="BG-BIT" Name="CompLab.bit"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="CompLab_bus_skew_postroute_physopted.rpx"/>
   <File Type="BITSTR-RBT" Name="CompLab.rbt"/>
   <File Type="BITSTR-NKY" Name="CompLab.nky"/>
   <File Type="BG-DRC" Name="CompLab.drc"/>
+  <File Type="RDI-RDI" Name="CompLab.vdi"/>
   <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>

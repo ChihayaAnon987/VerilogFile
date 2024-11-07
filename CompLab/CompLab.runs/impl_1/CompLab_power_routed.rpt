@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
-| Date             : Wed Nov  6 20:16:35 2024
+| Date             : Thu Nov  7 09:06:34 2024
 | Host             : MeYoKo running 64-bit major release  (build 9200)
 | Command          : report_power -file CompLab_power_routed.rpt -pb CompLab_power_summary_routed.pb -rpx CompLab_power_routed.rpx
 | Design           : CompLab
@@ -53,8 +53,8 @@ Table of Contents
 | On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
 +--------------------------+-----------+----------+-----------+-----------------+
 | Clocks                   |    <0.001 |        3 |       --- |             --- |
-| Slice Logic              |    <0.001 |     8887 |       --- |             --- |
-|   LUT as Logic           |    <0.001 |     2618 |     63400 |            4.13 |
+| Slice Logic              |    <0.001 |     8891 |       --- |             --- |
+|   LUT as Logic           |    <0.001 |     2624 |     63400 |            4.14 |
 |   Register               |    <0.001 |     4434 |    126800 |            3.50 |
 |   CARRY4                 |    <0.001 |      136 |     15850 |            0.86 |
 |   LUT as Shift Register  |    <0.001 |      352 |     19000 |            1.85 |
@@ -62,7 +62,7 @@ Table of Contents
 |   LUT as Distributed RAM |    <0.001 |       24 |     19000 |            0.13 |
 |   F7/F8 Muxes            |    <0.001 |      131 |     63400 |            0.21 |
 |   Others                 |     0.000 |      576 |       --- |             --- |
-| Signals                  |    <0.001 |     5959 |       --- |             --- |
+| Signals                  |    <0.001 |     5964 |       --- |             --- |
 | Block RAM                |    <0.001 |        4 |       135 |            2.96 |
 | I/O                      |     0.003 |       29 |       285 |           10.18 |
 | Static Power             |     0.097 |          |           |                 |
