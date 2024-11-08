@@ -89,19 +89,19 @@ module string_match(
             response <= 8'h30;  // 复位时清空响应
         end 
         else begin
-                if ((buffer[4] == 8'h73) &&            // 's' or 'S'
-                    (buffer[3] == 8'h74) &&            // 't' or 'T'
-                    (buffer[2] == 8'h61) &&            // 'a' or 'A'
-                    (buffer[1] == 8'h72) &&            // 'r' or 'R'
-                    (buffer[0] == 8'h74) && valid)    // 't' or 'T'
+                if ((buffer[4] == 8'h73) &&            // 's'
+                    (buffer[3] == 8'h74) &&            // 't'
+                    (buffer[2] == 8'h61) &&            // 'a'
+                    (buffer[1] == 8'h72) &&            // 'r'
+                    (buffer[0] == 8'h74) && valid)    // 't'
                 begin
                     response <= 8'h31;
                 end
 
-                else if ((buffer[3] == 8'h73) &&           // 's' or 'S'
-                        (buffer[2] == 8'h74) &&            // 't' or 'T'
-                        (buffer[1] == 8'h6F) &&            // 'o' or 'O'
-                        (buffer[0] == 8'h70) && valid)    // 'p' or 'P'
+                else if ((buffer[3] == 8'h73) &&           // 's'
+                        (buffer[2] == 8'h74) &&            // 't'
+                        (buffer[1] == 8'h6F) &&            // 'o'
+                        (buffer[0] == 8'h70) && valid)    // 'p'
                 begin
                     response <= 8'h32;
                 end
