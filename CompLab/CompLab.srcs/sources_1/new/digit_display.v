@@ -42,7 +42,7 @@ module digit_display (
             display_data[5] <= 8'h00;
             display_data[6] <= 8'h00;
             display_data[7] <= 8'h00;
-        end else if (valid && data != 8'h0a && data != 8'h0d) begin
+        end else if (valid && data != 8'h0a && data != 8'h0d) begin   //你无敌了回车换行
             display_data[0] <= data;
             display_data[1] <= display_data[0];
             display_data[2] <= display_data[1];
