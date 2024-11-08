@@ -20,7 +20,7 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module testbench();
+module uart_receive_tb();
 
 localparam CLK_FREQ = 100_000_000;          // clock frequency: 100 MHz
 localparam PERIOD   = 1e9/CLK_FREQ;         // clock cycle: 10ns
@@ -30,24 +30,26 @@ localparam DIVIDER = CLK_FREQ / BAUD_RATE;  // clocks for one bit, should be 104
 reg         clk;
 reg         rst;
 reg         din;
-wire        dout;
-string_match uut (
+wire        valid;
+wire [7:0]  data;
+ 
+uart_recv u_uart_recv (
     .clk(clk),
     .rst(rst),
     .din(din),
-    .dout(dout)
+    .valid(valid),
+    .data(data)
 );
 
 always #(PERIOD/2) clk = ~clk;
 
 reg [7:0] test_data[0:9];   // 10 test cases
 integer i;                 
-
+integer err_num;
 
 initial begin
-    clk = 0;
-    rst = 1;
-    din = 1; 
+    $display("Uart baud rate = %d, freq divider = %d",BAUD_RATE, DIVIDER);
+
     test_data[0] = 8'h73;  // 0101_0101
     test_data[1] = 8'h74;  // 1010_0011
     test_data[2] = 8'h61;  // 0000_1111
@@ -58,11 +60,35 @@ initial begin
     test_data[7] = 8'h00;  // 0000_0000
     test_data[8] = 8'h5A;  // 0101_1010
     test_data[9] = 8'hA5;  // 1010_0101
+    
+    #(200*DIVIDER*PERIOD)
+    $display("Test failed: Timeout ");
+    $finish;
+end
+
+initial begin
+    clk = 0;
+    rst = 1;
+    din = 1; 
+    err_num = 0;
     #(10*PERIOD) rst = 0; 
     
     for (i = 0; i < 10; i = i + 1) begin
         send_byte(test_data[i]);  
+
+        wait (valid == 1);
+        if (data === test_data[i]) begin
+            $display("Test case:%2d success, Received expected data = 0x%h", i, data);
+        end else begin
+            err_num = err_num + 1;
+            $display("Test case:%2d failed, Expected 0x%h, but received 0x%h", i, test_data[i], data);
+        end
+        #(DIVIDER*PERIOD/2);
     end
+
+    if(err_num == 0)  $display("All test cases passed.");
+    else              $display("%2d test cases failed.", err_num);
+    
     #(10*PERIOD)
     $finish;
 end
@@ -80,7 +106,7 @@ task send_byte(input [7:0] byte);
         end
 
         din = 1;    // stop bit
-        #(DIVIDER*PERIOD);
+        #(DIVIDER*PERIOD/2);
     end
 endtask
 

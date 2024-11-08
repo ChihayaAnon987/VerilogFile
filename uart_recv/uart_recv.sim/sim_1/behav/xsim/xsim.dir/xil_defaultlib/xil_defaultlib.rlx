@@ -3,5 +3,5 @@
 Dec  7 2018
 00:33:28
 D:/VerilogFile/uart_recv/uart_recv.sim/sim_1/behav/xsim/glbl.v,1544155481,verilog,,,,glbl,,,,,,,,
-D:/VerilogFile/uart_recv/uart_recv.srcs/sim_1/new/uart_recv_tb.v,1730887885,verilog,,,,uart_receive_tb,,,,,,,,
-D:/VerilogFile/uart_recv/uart_recv.srcs/sources_1/new/uart_recv.v,1730901534,verilog,,D:/VerilogFile/uart_recv/uart_recv.srcs/sim_1/new/uart_recv_tb.v,,uart_recv,,,,,,,,
+D:/VerilogFile/uart_recv/uart_recv.srcs/sim_1/new/uart_recv_tb.v,1731044845,verilog,,,,uart_receive_tb,,,,,,,,
+D:/VerilogFile/uart_recv/uart_recv.srcs/sources_1/new/uart_recv.v,1731045745,verilog,,D:/VerilogFile/uart_recv/uart_recv.srcs/sim_1/new/uart_recv_tb.v,,uart_recv,,,,,,,,

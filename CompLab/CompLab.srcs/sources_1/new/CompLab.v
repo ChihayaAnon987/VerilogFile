@@ -45,21 +45,45 @@ module CompLab(
         .button_raw(s3_raw),
         .button_rising_edge(button3_rising_edge)
     );
-    
+
+
+    wire [7:0] data;
+    wire valid;
+
+    uart_recv uart_recv(
+        .clk(clk),
+        .rst(button1_rising_edge),
+        .din(din),
+        .data(data),
+        .valid(valid)
+    );
+
     digit_display digit_display(
         .clk(clk),
         .rst(button1_rising_edge),
-        .data(sw),
-        .valid(button3_rising_edge),
         .segment_select(segment_select),
+        .valid(valid),
+        .data(data),
         .digit_select(digit_select)
+    );
+
+    wire dout1;
+    wire dout2;
+    uart_send uart_send_sw(
+        .clk(clk),
+        .rst(button1_rising_edge),
+        .valid(button3_rising_edge),
+        .dout(dout1),
+        .data(sw)
     );
 
     string_match string_match(
         .clk(clk),
         .rst(button1_rising_edge),
         .din(din),
-        .dout(dout)
+        .dout(dout2)
     );
+    
+    assign dout = dout1 & dout2;
 
 endmodule

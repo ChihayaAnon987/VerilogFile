@@ -1,7 +1,7 @@
-Running: xsim.dir/CompLab_behav/xsimk.exe -simmode gui -wdb CompLab_behav.wdb -simrunnum 0 -socket 58352
+Running: xsim.dir/CompLab_behav/xsimk.exe -simmode gui -wdb CompLab_behav.wdb -simrunnum 0 -socket 54009
 Design successfully loaded
-Design Loading Memory Usage: 6924 KB (Peak: 6924 KB)
+Design Loading Memory Usage: 7456 KB (Peak: 7456 KB)
 Design Loading CPU Usage: 0 ms
 Simulation completed
-Simulation Memory Usage: 7532 KB (Peak: 7532 KB)
+Simulation Memory Usage: 8104 KB (Peak: 8104 KB)
 Simulation CPU Usage: 0 ms

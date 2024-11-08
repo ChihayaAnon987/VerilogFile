@@ -14,20 +14,14 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 9104 
+INFO: Helper process launched with PID 27424 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:00 ; elapsed = 00:00:02 . Memory (MB): peak = 340.832 ; gain = 95.727
+Starting RTL Elaboration : Time (s): cpu = 00:00:00 ; elapsed = 00:00:01 . Memory (MB): peak = 339.180 ; gain = 72.352
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'CompLab' [D:/VerilogFile/CompLab/CompLab.srcs/sources_1/new/CompLab.v:23]
 INFO: [Synth 8-6157] synthesizing module 'debounce' [D:/VerilogFile/CompLab/CompLab.srcs/sources_1/new/debounce.v:22]
 	Parameter DEBOUNCE_TIME bound to: 1000000 - type: integer 
 INFO: [Synth 8-6155] done synthesizing module 'debounce' (1#1) [D:/VerilogFile/CompLab/CompLab.srcs/sources_1/new/debounce.v:22]
-INFO: [Synth 8-6157] synthesizing module 'digit_display' [D:/VerilogFile/CompLab/CompLab.srcs/sources_1/new/digit_display.v:22]
-	Parameter REFRESH_RATE bound to: 100000 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'digit_display' (2#1) [D:/VerilogFile/CompLab/CompLab.srcs/sources_1/new/digit_display.v:22]
-INFO: [Synth 8-6157] synthesizing module 'string_match' [D:/VerilogFile/CompLab/CompLab.srcs/sources_1/new/string_match.v:23]
-INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [D:/VerilogFile/CompLab/CompLab.srcs/sources_1/new/string_match.v:30]
-INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [D:/VerilogFile/CompLab/CompLab.srcs/sources_1/new/string_match.v:33]
 INFO: [Synth 8-6157] synthesizing module 'uart_recv' [D:/VerilogFile/CompLab/CompLab.srcs/sources_1/new/uart_recv.v:23]
 	Parameter IDLE bound to: 3'b000 
 	Parameter START bound to: 3'b001 
@@ -36,8 +30,10 @@ INFO: [Synth 8-6157] synthesizing module 'uart_recv' [D:/VerilogFile/CompLab/Com
 	Parameter CLK_FREQ bound to: 100000000 - type: integer 
 	Parameter BAUD_RATE bound to: 9600 - type: integer 
 	Parameter DIVIDER bound to: 10416 - type: integer 
-INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [D:/VerilogFile/CompLab/CompLab.srcs/sources_1/new/uart_recv.v:27]
-INFO: [Synth 8-6155] done synthesizing module 'uart_recv' (3#1) [D:/VerilogFile/CompLab/CompLab.srcs/sources_1/new/uart_recv.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'uart_recv' (2#1) [D:/VerilogFile/CompLab/CompLab.srcs/sources_1/new/uart_recv.v:23]
+INFO: [Synth 8-6157] synthesizing module 'digit_display' [D:/VerilogFile/CompLab/CompLab.srcs/sources_1/new/digit_display.v:22]
+	Parameter REFRESH_RATE bound to: 100000 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'digit_display' (3#1) [D:/VerilogFile/CompLab/CompLab.srcs/sources_1/new/digit_display.v:22]
 INFO: [Synth 8-6157] synthesizing module 'uart_send' [D:/VerilogFile/CompLab/CompLab.srcs/sources_1/new/uart_send.v:133]
 	Parameter IDLE bound to: 2'b00 
 	Parameter START bound to: 2'b01 
@@ -49,11 +45,22 @@ INFO: [Synth 8-6157] synthesizing module 'uart_send' [D:/VerilogFile/CompLab/Com
 INFO: [Synth 8-226] default block is never used [D:/VerilogFile/CompLab/CompLab.srcs/sources_1/new/uart_send.v:185]
 INFO: [Synth 8-226] default block is never used [D:/VerilogFile/CompLab/CompLab.srcs/sources_1/new/uart_send.v:210]
 INFO: [Synth 8-6155] done synthesizing module 'uart_send' (4#1) [D:/VerilogFile/CompLab/CompLab.srcs/sources_1/new/uart_send.v:133]
-INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'uart_send'. This will prevent further optimization [D:/VerilogFile/CompLab/CompLab.srcs/sources_1/new/string_match.v:118]
+INFO: [Synth 8-6157] synthesizing module 'string_match' [D:/VerilogFile/CompLab/CompLab.srcs/sources_1/new/string_match.v:23]
+WARNING: [Synth 8-6014] Unused sequential element buffer_reg[15] was removed.  [D:/VerilogFile/CompLab/CompLab.srcs/sources_1/new/string_match.v:48]
+WARNING: [Synth 8-6014] Unused sequential element buffer_reg[14] was removed.  [D:/VerilogFile/CompLab/CompLab.srcs/sources_1/new/string_match.v:48]
+WARNING: [Synth 8-6014] Unused sequential element buffer_reg[13] was removed.  [D:/VerilogFile/CompLab/CompLab.srcs/sources_1/new/string_match.v:48]
+WARNING: [Synth 8-6014] Unused sequential element buffer_reg[12] was removed.  [D:/VerilogFile/CompLab/CompLab.srcs/sources_1/new/string_match.v:48]
+WARNING: [Synth 8-6014] Unused sequential element buffer_reg[11] was removed.  [D:/VerilogFile/CompLab/CompLab.srcs/sources_1/new/string_match.v:48]
+WARNING: [Synth 8-6014] Unused sequential element buffer_reg[10] was removed.  [D:/VerilogFile/CompLab/CompLab.srcs/sources_1/new/string_match.v:48]
+WARNING: [Synth 8-6014] Unused sequential element buffer_reg[9] was removed.  [D:/VerilogFile/CompLab/CompLab.srcs/sources_1/new/string_match.v:48]
+WARNING: [Synth 8-6014] Unused sequential element buffer_reg[8] was removed.  [D:/VerilogFile/CompLab/CompLab.srcs/sources_1/new/string_match.v:48]
+WARNING: [Synth 8-6014] Unused sequential element buffer_reg[7] was removed.  [D:/VerilogFile/CompLab/CompLab.srcs/sources_1/new/string_match.v:48]
+WARNING: [Synth 8-6014] Unused sequential element buffer_reg[6] was removed.  [D:/VerilogFile/CompLab/CompLab.srcs/sources_1/new/string_match.v:48]
+WARNING: [Synth 8-6014] Unused sequential element buffer_reg[5] was removed.  [D:/VerilogFile/CompLab/CompLab.srcs/sources_1/new/string_match.v:48]
 INFO: [Synth 8-6155] done synthesizing module 'string_match' (5#1) [D:/VerilogFile/CompLab/CompLab.srcs/sources_1/new/string_match.v:23]
 INFO: [Synth 8-6155] done synthesizing module 'CompLab' (6#1) [D:/VerilogFile/CompLab/CompLab.srcs/sources_1/new/CompLab.v:23]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:00 ; elapsed = 00:00:02 . Memory (MB): peak = 396.797 ; gain = 151.691
+Finished RTL Elaboration : Time (s): cpu = 00:00:00 ; elapsed = 00:00:03 . Memory (MB): peak = 394.570 ; gain = 127.742
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -66,10 +73,10 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:00 ; elapsed = 00:00:02 . Memory (MB): peak = 396.797 ; gain = 151.691
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:00 ; elapsed = 00:00:03 . Memory (MB): peak = 394.570 ; gain = 127.742
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:00 ; elapsed = 00:00:02 . Memory (MB): peak = 396.797 ; gain = 151.691
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:00 ; elapsed = 00:00:03 . Memory (MB): peak = 394.570 ; gain = 127.742
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7a100tfgg484-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
@@ -80,31 +87,37 @@ Parsing XDC File [D:/VerilogFile/CompLab/CompLab.srcs/constrs_1/new/pin.xdc]
 Finished Parsing XDC File [D:/VerilogFile/CompLab/CompLab.srcs/constrs_1/new/pin.xdc]
 INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/VerilogFile/CompLab/CompLab.srcs/constrs_1/new/pin.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/CompLab_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/CompLab_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 741.984 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 740.375 ; gain = 0.000
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 741.984 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 740.375 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 741.984 ; gain = 0.000
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 741.984 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 740.375 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 740.375 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:02 ; elapsed = 00:00:08 . Memory (MB): peak = 741.984 ; gain = 496.879
+Finished Constraint Validation : Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 740.375 ; gain = 473.547
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a100tfgg484-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:02 ; elapsed = 00:00:08 . Memory (MB): peak = 741.984 ; gain = 496.879
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 740.375 ; gain = 473.547
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:02 ; elapsed = 00:00:08 . Memory (MB): peak = 741.984 ; gain = 496.879
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 740.375 ; gain = 473.547
 ---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'uart_recv'
+INFO: [Synth 8-5544] ROM "bit_index" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state0" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state0" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state0" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state0" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
 INFO: [Synth 8-5587] ROM size for "get_segment" is below threshold of ROM address width. It will be mapped to LUTs
 INFO: [Synth 8-5587] ROM size for "get_segment0" is below threshold of ROM address width. It will be mapped to LUTs
 INFO: [Synth 8-5587] ROM size for "get_segment1" is below threshold of ROM address width. It will be mapped to LUTs
@@ -113,12 +126,6 @@ INFO: [Synth 8-5587] ROM size for "get_segment3" is below threshold of ROM addre
 INFO: [Synth 8-5587] ROM size for "get_segment4" is below threshold of ROM address width. It will be mapped to LUTs
 INFO: [Synth 8-5587] ROM size for "get_segment5" is below threshold of ROM address width. It will be mapped to LUTs
 INFO: [Synth 8-5587] ROM size for "get_segment6" is below threshold of ROM address width. It will be mapped to LUTs
-INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'uart_recv'
-INFO: [Synth 8-5544] ROM "bit_index" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
-INFO: [Synth 8-5544] ROM "next_state0" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
-INFO: [Synth 8-5544] ROM "next_state0" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
-INFO: [Synth 8-5544] ROM "next_state0" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
-INFO: [Synth 8-5544] ROM "next_state0" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
 INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'uart_send'
 INFO: [Synth 8-5544] ROM "bit_cnt" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "next_state0" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
@@ -144,7 +151,7 @@ INFO: [Synth 8-3354] encoded FSM with state register 'current_state_reg' using e
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'current_state_reg' using encoding 'sequential' in module 'uart_send'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:08 . Memory (MB): peak = 741.984 ; gain = 496.879
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:08 . Memory (MB): peak = 740.375 ; gain = 473.547
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -157,27 +164,28 @@ Start RTL Component Statistics
 ---------------------------------------------------------------------------------
 Detailed RTL Component Info : 
 +---Adders : 
-	   2 Input     14 Bit       Adders := 1     
-	   2 Input      4 Bit       Adders := 2     
+	   2 Input     14 Bit       Adders := 2     
+	   2 Input      4 Bit       Adders := 4     
 	   2 Input      3 Bit       Adders := 1     
 +---Registers : 
-	               32 Bit    Registers := 1     
-	                8 Bit    Registers := 29    
-	                4 Bit    Registers := 2     
+	               32 Bit    Registers := 2     
+	                8 Bit    Registers := 20    
+	                4 Bit    Registers := 4     
 	                3 Bit    Registers := 1     
 	                2 Bit    Registers := 2     
-	                1 Bit    Registers := 8     
+	                1 Bit    Registers := 12    
 +---Muxes : 
-	   4 Input     32 Bit        Muxes := 1     
+	   4 Input     32 Bit        Muxes := 2     
+	   2 Input      8 Bit        Muxes := 10    
+	   4 Input      8 Bit        Muxes := 2     
 	  17 Input      8 Bit        Muxes := 8     
-	   2 Input      8 Bit        Muxes := 28    
 	   8 Input      8 Bit        Muxes := 1     
-	   4 Input      8 Bit        Muxes := 1     
-	   2 Input      4 Bit        Muxes := 2     
-	   4 Input      2 Bit        Muxes := 2     
-	   2 Input      2 Bit        Muxes := 8     
-	   2 Input      1 Bit        Muxes := 8     
-	   4 Input      1 Bit        Muxes := 2     
+	   3 Input      6 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 4     
+	   4 Input      2 Bit        Muxes := 4     
+	   2 Input      2 Bit        Muxes := 16    
+	   2 Input      1 Bit        Muxes := 20    
+	   4 Input      1 Bit        Muxes := 6     
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
 ---------------------------------------------------------------------------------
@@ -190,17 +198,6 @@ Detailed RTL Component Info :
 +---Registers : 
 	                2 Bit    Registers := 1     
 	                1 Bit    Registers := 2     
-Module digit_display 
-Detailed RTL Component Info : 
-+---Adders : 
-	   2 Input      3 Bit       Adders := 1     
-+---Registers : 
-	                8 Bit    Registers := 10    
-	                3 Bit    Registers := 1     
-+---Muxes : 
-	  17 Input      8 Bit        Muxes := 8     
-	   2 Input      8 Bit        Muxes := 8     
-	   8 Input      8 Bit        Muxes := 1     
 Module uart_recv 
 Detailed RTL Component Info : 
 +---Adders : 
@@ -215,8 +212,19 @@ Detailed RTL Component Info :
 	   2 Input      4 Bit        Muxes := 1     
 	   4 Input      2 Bit        Muxes := 1     
 	   2 Input      2 Bit        Muxes := 4     
-	   2 Input      1 Bit        Muxes := 4     
-	   4 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 5     
+	   4 Input      1 Bit        Muxes := 2     
+Module digit_display 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 10    
+	                3 Bit    Registers := 1     
++---Muxes : 
+	  17 Input      8 Bit        Muxes := 8     
+	   2 Input      8 Bit        Muxes := 8     
+	   8 Input      8 Bit        Muxes := 1     
 Module uart_send 
 Detailed RTL Component Info : 
 +---Adders : 
@@ -237,9 +245,10 @@ Detailed RTL Component Info :
 Module string_match 
 Detailed RTL Component Info : 
 +---Registers : 
-	                8 Bit    Registers := 17    
+	                8 Bit    Registers := 6     
 +---Muxes : 
-	   2 Input      8 Bit        Muxes := 19    
+	   3 Input      6 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
 ---------------------------------------------------------------------------------
 Finished RTL Hierarchical Component Statistics
 ---------------------------------------------------------------------------------
@@ -264,27 +273,55 @@ INFO: [Synth 8-5587] ROM size for "digit_display/get_segment3" is below threshol
 INFO: [Synth 8-5587] ROM size for "digit_display/get_segment4" is below threshold of ROM address width. It will be mapped to LUTs
 INFO: [Synth 8-5587] ROM size for "digit_display/get_segment5" is below threshold of ROM address width. It will be mapped to LUTs
 INFO: [Synth 8-5587] ROM size for "digit_display/get_segment6" is below threshold of ROM address width. It will be mapped to LUTs
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (\digit_display/segment_select_reg[0] )
-INFO: [Synth 8-3886] merging instance 'string_match/uart_send/baud_cnt_reg[14]' (FDC) to 'string_match/uart_send/baud_cnt_reg[15]'
-INFO: [Synth 8-3886] merging instance 'string_match/uart_send/baud_cnt_reg[15]' (FDC) to 'string_match/uart_send/baud_cnt_reg[16]'
-INFO: [Synth 8-3886] merging instance 'string_match/uart_send/baud_cnt_reg[16]' (FDC) to 'string_match/uart_send/baud_cnt_reg[17]'
-INFO: [Synth 8-3886] merging instance 'string_match/uart_send/baud_cnt_reg[17]' (FDC) to 'string_match/uart_send/baud_cnt_reg[18]'
-INFO: [Synth 8-3886] merging instance 'string_match/uart_send/baud_cnt_reg[18]' (FDC) to 'string_match/uart_send/baud_cnt_reg[19]'
-INFO: [Synth 8-3886] merging instance 'string_match/uart_send/baud_cnt_reg[19]' (FDC) to 'string_match/uart_send/baud_cnt_reg[20]'
-INFO: [Synth 8-3886] merging instance 'string_match/uart_send/baud_cnt_reg[20]' (FDC) to 'string_match/uart_send/baud_cnt_reg[21]'
-INFO: [Synth 8-3886] merging instance 'string_match/uart_send/baud_cnt_reg[21]' (FDC) to 'string_match/uart_send/baud_cnt_reg[22]'
-INFO: [Synth 8-3886] merging instance 'string_match/uart_send/baud_cnt_reg[22]' (FDC) to 'string_match/uart_send/baud_cnt_reg[23]'
-INFO: [Synth 8-3886] merging instance 'string_match/uart_send/baud_cnt_reg[23]' (FDC) to 'string_match/uart_send/baud_cnt_reg[24]'
-INFO: [Synth 8-3886] merging instance 'string_match/uart_send/baud_cnt_reg[24]' (FDC) to 'string_match/uart_send/baud_cnt_reg[25]'
-INFO: [Synth 8-3886] merging instance 'string_match/uart_send/baud_cnt_reg[25]' (FDC) to 'string_match/uart_send/baud_cnt_reg[26]'
-INFO: [Synth 8-3886] merging instance 'string_match/uart_send/baud_cnt_reg[26]' (FDC) to 'string_match/uart_send/baud_cnt_reg[27]'
-INFO: [Synth 8-3886] merging instance 'string_match/uart_send/baud_cnt_reg[27]' (FDC) to 'string_match/uart_send/baud_cnt_reg[28]'
-INFO: [Synth 8-3886] merging instance 'string_match/uart_send/baud_cnt_reg[28]' (FDC) to 'string_match/uart_send/baud_cnt_reg[29]'
-INFO: [Synth 8-3886] merging instance 'string_match/uart_send/baud_cnt_reg[29]' (FDC) to 'string_match/uart_send/baud_cnt_reg[30]'
+INFO: [Synth 8-3886] merging instance 'uart_send_sw/baud_cnt_reg[14]' (FDC) to 'string_match/uart_send/baud_cnt_reg[31]'
+INFO: [Synth 8-3886] merging instance 'uart_send_sw/baud_cnt_reg[15]' (FDC) to 'string_match/uart_send/baud_cnt_reg[31]'
+INFO: [Synth 8-3886] merging instance 'uart_send_sw/baud_cnt_reg[16]' (FDC) to 'string_match/uart_send/baud_cnt_reg[31]'
+INFO: [Synth 8-3886] merging instance 'uart_send_sw/baud_cnt_reg[17]' (FDC) to 'string_match/uart_send/baud_cnt_reg[31]'
+INFO: [Synth 8-3886] merging instance 'uart_send_sw/baud_cnt_reg[18]' (FDC) to 'string_match/uart_send/baud_cnt_reg[31]'
+INFO: [Synth 8-3886] merging instance 'uart_send_sw/baud_cnt_reg[19]' (FDC) to 'string_match/uart_send/baud_cnt_reg[31]'
+INFO: [Synth 8-3886] merging instance 'uart_send_sw/baud_cnt_reg[20]' (FDC) to 'string_match/uart_send/baud_cnt_reg[31]'
+INFO: [Synth 8-3886] merging instance 'uart_send_sw/baud_cnt_reg[21]' (FDC) to 'string_match/uart_send/baud_cnt_reg[31]'
+INFO: [Synth 8-3886] merging instance 'uart_send_sw/baud_cnt_reg[22]' (FDC) to 'string_match/uart_send/baud_cnt_reg[31]'
+INFO: [Synth 8-3886] merging instance 'uart_send_sw/baud_cnt_reg[23]' (FDC) to 'string_match/uart_send/baud_cnt_reg[31]'
+INFO: [Synth 8-3886] merging instance 'uart_send_sw/baud_cnt_reg[24]' (FDC) to 'string_match/uart_send/baud_cnt_reg[31]'
+INFO: [Synth 8-3886] merging instance 'uart_send_sw/baud_cnt_reg[25]' (FDC) to 'string_match/uart_send/baud_cnt_reg[31]'
+INFO: [Synth 8-3886] merging instance 'uart_send_sw/baud_cnt_reg[26]' (FDC) to 'string_match/uart_send/baud_cnt_reg[31]'
+INFO: [Synth 8-3886] merging instance 'uart_send_sw/baud_cnt_reg[27]' (FDC) to 'string_match/uart_send/baud_cnt_reg[31]'
+INFO: [Synth 8-3886] merging instance 'uart_send_sw/baud_cnt_reg[28]' (FDC) to 'string_match/uart_send/baud_cnt_reg[31]'
+INFO: [Synth 8-3886] merging instance 'uart_send_sw/baud_cnt_reg[29]' (FDC) to 'string_match/uart_send/baud_cnt_reg[31]'
+INFO: [Synth 8-3886] merging instance 'uart_send_sw/baud_cnt_reg[30]' (FDC) to 'string_match/uart_send/baud_cnt_reg[31]'
+INFO: [Synth 8-3886] merging instance 'uart_send_sw/baud_cnt_reg[31]' (FDC) to 'string_match/uart_send/baud_cnt_reg[31]'
+INFO: [Synth 8-3886] merging instance 'string_match/response_reg[7]' (FDCE) to 'string_match/response_reg[6]'
+INFO: [Synth 8-3886] merging instance 'string_match/response_reg[6]' (FDCE) to 'string_match/response_reg[3]'
+INFO: [Synth 8-3886] merging instance 'string_match/response_reg[5]' (FDPE) to 'string_match/response_reg[4]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\string_match/response_reg[4] )
+INFO: [Synth 8-3886] merging instance 'string_match/response_reg[3]' (FDCE) to 'string_match/response_reg[2]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\string_match/response_reg[2] )
+INFO: [Synth 8-3886] merging instance 'string_match/uart_send/baud_cnt_reg[14]' (FDC) to 'string_match/uart_send/baud_cnt_reg[31]'
+INFO: [Synth 8-3886] merging instance 'string_match/uart_send/baud_cnt_reg[15]' (FDC) to 'string_match/uart_send/baud_cnt_reg[31]'
+INFO: [Synth 8-3886] merging instance 'string_match/uart_send/baud_cnt_reg[16]' (FDC) to 'string_match/uart_send/baud_cnt_reg[31]'
+INFO: [Synth 8-3886] merging instance 'string_match/uart_send/baud_cnt_reg[17]' (FDC) to 'string_match/uart_send/baud_cnt_reg[31]'
+INFO: [Synth 8-3886] merging instance 'string_match/uart_send/baud_cnt_reg[18]' (FDC) to 'string_match/uart_send/baud_cnt_reg[31]'
+INFO: [Synth 8-3886] merging instance 'string_match/uart_send/baud_cnt_reg[19]' (FDC) to 'string_match/uart_send/baud_cnt_reg[31]'
+INFO: [Synth 8-3886] merging instance 'string_match/uart_send/baud_cnt_reg[20]' (FDC) to 'string_match/uart_send/baud_cnt_reg[31]'
+INFO: [Synth 8-3886] merging instance 'string_match/uart_send/baud_cnt_reg[21]' (FDC) to 'string_match/uart_send/baud_cnt_reg[31]'
+INFO: [Synth 8-3886] merging instance 'string_match/uart_send/baud_cnt_reg[22]' (FDC) to 'string_match/uart_send/baud_cnt_reg[31]'
+INFO: [Synth 8-3886] merging instance 'string_match/uart_send/baud_cnt_reg[23]' (FDC) to 'string_match/uart_send/baud_cnt_reg[31]'
+INFO: [Synth 8-3886] merging instance 'string_match/uart_send/baud_cnt_reg[24]' (FDC) to 'string_match/uart_send/baud_cnt_reg[31]'
+INFO: [Synth 8-3886] merging instance 'string_match/uart_send/baud_cnt_reg[25]' (FDC) to 'string_match/uart_send/baud_cnt_reg[31]'
+INFO: [Synth 8-3886] merging instance 'string_match/uart_send/baud_cnt_reg[26]' (FDC) to 'string_match/uart_send/baud_cnt_reg[31]'
+INFO: [Synth 8-3886] merging instance 'string_match/uart_send/baud_cnt_reg[27]' (FDC) to 'string_match/uart_send/baud_cnt_reg[31]'
+INFO: [Synth 8-3886] merging instance 'string_match/uart_send/baud_cnt_reg[28]' (FDC) to 'string_match/uart_send/baud_cnt_reg[31]'
+INFO: [Synth 8-3886] merging instance 'string_match/uart_send/baud_cnt_reg[29]' (FDC) to 'string_match/uart_send/baud_cnt_reg[31]'
 INFO: [Synth 8-3886] merging instance 'string_match/uart_send/baud_cnt_reg[30]' (FDC) to 'string_match/uart_send/baud_cnt_reg[31]'
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\string_match/uart_send /\baud_cnt_reg[31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\string_match/uart_send/baud_cnt_reg[31] )
+INFO: [Synth 8-3886] merging instance 'string_match/uart_send/data_valid_reg[7]' (FDCE) to 'string_match/uart_send/data_valid_reg[2]'
+INFO: [Synth 8-3886] merging instance 'string_match/uart_send/data_valid_reg[6]' (FDCE) to 'string_match/uart_send/data_valid_reg[2]'
+INFO: [Synth 8-3886] merging instance 'string_match/uart_send/data_valid_reg[5]' (FDCE) to 'string_match/uart_send/data_valid_reg[4]'
+INFO: [Synth 8-3886] merging instance 'string_match/uart_send/data_valid_reg[3]' (FDCE) to 'string_match/uart_send/data_valid_reg[2]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\digit_display/segment_select_reg[0] )
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:02 ; elapsed = 00:00:10 . Memory (MB): peak = 741.984 ; gain = 496.879
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:02 ; elapsed = 00:00:09 . Memory (MB): peak = 740.375 ; gain = 473.547
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -296,13 +333,13 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:03 ; elapsed = 00:00:14 . Memory (MB): peak = 741.984 ; gain = 496.879
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:02 ; elapsed = 00:00:13 . Memory (MB): peak = 740.375 ; gain = 473.547
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:03 ; elapsed = 00:00:14 . Memory (MB): peak = 741.984 ; gain = 496.879
+Finished Timing Optimization : Time (s): cpu = 00:00:02 ; elapsed = 00:00:13 . Memory (MB): peak = 740.375 ; gain = 473.547
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -314,7 +351,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:03 ; elapsed = 00:00:14 . Memory (MB): peak = 765.047 ; gain = 519.941
+Finished Technology Mapping : Time (s): cpu = 00:00:02 ; elapsed = 00:00:14 . Memory (MB): peak = 768.680 ; gain = 501.852
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -338,7 +375,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:04 ; elapsed = 00:00:15 . Memory (MB): peak = 765.047 ; gain = 519.941
+Finished IO Insertion : Time (s): cpu = 00:00:02 ; elapsed = 00:00:14 . Memory (MB): peak = 768.680 ; gain = 501.852
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -351,7 +388,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:04 ; elapsed = 00:00:15 . Memory (MB): peak = 765.047 ; gain = 519.941
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:02 ; elapsed = 00:00:14 . Memory (MB): peak = 768.680 ; gain = 501.852
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -363,25 +400,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:04 ; elapsed = 00:00:15 . Memory (MB): peak = 765.047 ; gain = 519.941
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:02 ; elapsed = 00:00:14 . Memory (MB): peak = 768.680 ; gain = 501.852
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:04 ; elapsed = 00:00:15 . Memory (MB): peak = 765.047 ; gain = 519.941
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:02 ; elapsed = 00:00:14 . Memory (MB): peak = 768.680 ; gain = 501.852
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:15 . Memory (MB): peak = 765.047 ; gain = 519.941
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:14 . Memory (MB): peak = 768.680 ; gain = 501.852
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:04 ; elapsed = 00:00:15 . Memory (MB): peak = 765.047 ; gain = 519.941
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:02 ; elapsed = 00:00:14 . Memory (MB): peak = 768.680 ; gain = 501.852
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -398,16 +435,16 @@ Report Cell Usage:
 |      |Cell   |Count |
 +------+-------+------+
 |1     |BUFG   |     1|
-|2     |CARRY4 |    27|
+|2     |CARRY4 |    39|
 |3     |LUT1   |     3|
-|4     |LUT2   |    40|
-|5     |LUT3   |    16|
-|6     |LUT4   |    99|
-|7     |LUT5   |    24|
-|8     |LUT6   |   116|
+|4     |LUT2   |    22|
+|5     |LUT3   |    35|
+|6     |LUT4   |   143|
+|7     |LUT5   |    41|
+|8     |LUT6   |   153|
 |9     |MUXF7  |     7|
-|10    |FDCE   |   179|
-|11    |FDPE   |   114|
+|10    |FDCE   |   245|
+|11    |FDPE   |    27|
 |12    |FDRE   |    68|
 |13    |IBUF   |    12|
 |14    |OBUF   |    17|
@@ -417,36 +454,38 @@ Report Instance Areas:
 +------+----------------+--------------+------+
 |      |Instance        |Module        |Cells |
 +------+----------------+--------------+------+
-|1     |top             |              |   723|
+|1     |top             |              |   813|
 |2     |  debounce1     |debounce      |    40|
 |3     |  debounce3     |debounce_0    |    38|
 |4     |  digit_display |digit_display |   272|
-|5     |  string_match  |string_match  |   343|
-|6     |    uart_recv   |uart_recv     |   119|
-|7     |    uart_send   |uart_send     |    64|
+|5     |  string_match  |string_match  |   241|
+|6     |    uart_recv   |uart_recv_1   |   127|
+|7     |    uart_send   |uart_send_2   |    60|
+|8     |  uart_recv     |uart_recv     |   125|
+|9     |  uart_send_sw  |uart_send     |    67|
 +------+----------------+--------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:04 ; elapsed = 00:00:15 . Memory (MB): peak = 765.047 ; gain = 519.941
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:02 ; elapsed = 00:00:14 . Memory (MB): peak = 768.680 ; gain = 501.852
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:03 ; elapsed = 00:00:11 . Memory (MB): peak = 765.047 ; gain = 174.754
-Synthesis Optimization Complete : Time (s): cpu = 00:00:04 ; elapsed = 00:00:15 . Memory (MB): peak = 765.047 ; gain = 519.941
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:01 ; elapsed = 00:00:11 . Memory (MB): peak = 768.680 ; gain = 156.047
+Synthesis Optimization Complete : Time (s): cpu = 00:00:02 ; elapsed = 00:00:14 . Memory (MB): peak = 768.680 ; gain = 501.852
 INFO: [Project 1-571] Translating synthesized netlist
-INFO: [Netlist 29-17] Analyzing 34 Unisim elements for replacement
+INFO: [Netlist 29-17] Analyzing 46 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 765.047 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 768.680 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
-79 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+103 Infos, 11 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:05 ; elapsed = 00:00:17 . Memory (MB): peak = 765.047 ; gain = 519.941
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 765.047 ; gain = 0.000
+synth_design: Time (s): cpu = 00:00:02 ; elapsed = 00:00:16 . Memory (MB): peak = 768.680 ; gain = 501.852
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 768.680 ; gain = 0.000
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
 INFO: [Common 17-1381] The checkpoint 'D:/VerilogFile/CompLab/CompLab.runs/synth_1/CompLab.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file CompLab_utilization_synth.rpt -pb CompLab_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Thu Nov  7 09:05:26 2024...
+INFO: [Common 17-206] Exiting Vivado at Fri Nov  8 15:03:08 2024...
