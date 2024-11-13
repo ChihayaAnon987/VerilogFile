@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
-| Date             : Fri Nov  8 15:03:47 2024
+| Date             : Wed Nov 13 08:48:31 2024
 | Host             : MeYoKo running 64-bit major release  (build 9200)
 | Command          : report_power -file CompLab_power_routed.rpt -pb CompLab_power_summary_routed.pb -rpx CompLab_power_routed.rpx
 | Design           : CompLab

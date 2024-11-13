@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
-| Date         : Fri Nov  8 15:03:27 2024
+| Date         : Wed Nov 13 08:48:00 2024
 | Host         : MeYoKo running 64-bit major release  (build 9200)
 | Command      : report_drc -file CompLab_drc_opted.rpt -pb CompLab_drc_opted.pb -rpx CompLab_drc_opted.rpx
 | Design       : CompLab
@@ -49,7 +49,7 @@ Related violations: <none>
 
 IOSR-1#1 Warning
 IOB set reset sharing  
-IO din connects to flops which have these debounce1/button_stable_reg_0[0], debounce1/button_stable_reg_1[0] set/reset signals.  For optimal IOB flop packing there should be only one set/reset signal coming into the IOB.
+IO din connects to flops which have these debounce1/button_stable_reg_1[0], debounce1/button_stable_reg_0[0] set/reset signals.  For optimal IOB flop packing there should be only one set/reset signal coming into the IOB.
 Related violations: <none>
 
 

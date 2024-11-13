@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7a100tfgg484-1" LaunchTime="1731049370">
+<GenRun Id="impl_1" LaunchPart="xc7a100tfgg484-1" LaunchTime="1731458826">
   <File Type="BITSTR-BMM" Name="CompLab_bd.bmm"/>
   <File Type="OPT-METHODOLOGY-DRC" Name="CompLab_methodology_drc_opted.rpt"/>
   <File Type="INIT-TIMING" Name="CompLab_timing_summary_init.rpt"/>

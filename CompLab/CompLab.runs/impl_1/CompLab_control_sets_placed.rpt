@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
-| Date         : Fri Nov  8 15:03:29 2024
+| Date         : Wed Nov 13 08:48:02 2024
 | Host         : MeYoKo running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file CompLab_control_sets_placed.rpt
 | Design       : CompLab
@@ -63,26 +63,26 @@ Table of Contents
 +----------------+------------------------------------------------+----------------------------------+------------------+----------------+
 |  Clock Signal  |                  Enable Signal                 |         Set/Reset Signal         | Slice Load Count | Bel Load Count |
 +----------------+------------------------------------------------+----------------------------------+------------------+----------------+
-|  clk_IBUF_BUFG | uart_recv/data__0[6]                           | debounce1/button_stable_reg_1[0] |                1 |              1 |
-|  clk_IBUF_BUFG | uart_recv/data__0[2]                           | debounce1/button_stable_reg_1[0] |                1 |              1 |
 |  clk_IBUF_BUFG | uart_recv/data__0[0]                           | debounce1/button_stable_reg_1[0] |                1 |              1 |
-|  clk_IBUF_BUFG | uart_recv/data__0[5]                           | debounce1/button_stable_reg_1[0] |                1 |              1 |
 |  clk_IBUF_BUFG | uart_recv/data__0[1]                           | debounce1/button_stable_reg_1[0] |                1 |              1 |
-|  clk_IBUF_BUFG | uart_recv/data__0[7]                           | debounce1/button_stable_reg_1[0] |                1 |              1 |
+|  clk_IBUF_BUFG | uart_recv/data__0[2]                           | debounce1/button_stable_reg_1[0] |                1 |              1 |
 |  clk_IBUF_BUFG | uart_recv/data__0[3]                           | debounce1/button_stable_reg_1[0] |                1 |              1 |
 |  clk_IBUF_BUFG | uart_recv/data__0[4]                           | debounce1/button_stable_reg_1[0] |                1 |              1 |
-|  clk_IBUF_BUFG | string_match/uart_recv/data[4]_i_1__0_n_0      | debounce1/button_stable_reg_0[0] |                1 |              1 |
+|  clk_IBUF_BUFG | uart_recv/data__0[5]                           | debounce1/button_stable_reg_1[0] |                1 |              1 |
+|  clk_IBUF_BUFG | uart_recv/data__0[6]                           | debounce1/button_stable_reg_1[0] |                1 |              1 |
+|  clk_IBUF_BUFG | uart_recv/data__0[7]                           | debounce1/button_stable_reg_1[0] |                1 |              1 |
+|  clk_IBUF_BUFG | string_match/uart_recv/data[0]_i_1__0_n_0      | debounce1/button_stable_reg_0[0] |                1 |              1 |
+|  clk_IBUF_BUFG | string_match/uart_recv/data[1]_i_1__0_n_0      | debounce1/button_stable_reg_0[0] |                1 |              1 |
 |  clk_IBUF_BUFG | string_match/uart_recv/data[2]_i_1__0_n_0      | debounce1/button_stable_reg_0[0] |                1 |              1 |
 |  clk_IBUF_BUFG | string_match/uart_recv/data[5]_i_1__0_n_0      | debounce1/button_stable_reg_0[0] |                1 |              1 |
-|  clk_IBUF_BUFG | string_match/uart_recv/data[0]_i_1__0_n_0      | debounce1/button_stable_reg_0[0] |                1 |              1 |
 |  clk_IBUF_BUFG | string_match/uart_recv/data[7]_i_1__0_n_0      | debounce1/button_stable_reg_0[0] |                1 |              1 |
-|  clk_IBUF_BUFG | string_match/uart_recv/data[1]_i_1__0_n_0      | debounce1/button_stable_reg_0[0] |                1 |              1 |
-|  clk_IBUF_BUFG | string_match/uart_recv/data[3]_i_1__0_n_0      | debounce1/button_stable_reg_0[0] |                1 |              1 |
 |  clk_IBUF_BUFG | string_match/uart_recv/data[6]_i_1__0_n_0      | debounce1/button_stable_reg_0[0] |                1 |              1 |
+|  clk_IBUF_BUFG | string_match/uart_recv/data[3]_i_1__0_n_0      | debounce1/button_stable_reg_0[0] |                1 |              1 |
+|  clk_IBUF_BUFG | string_match/uart_recv/data[4]_i_1__0_n_0      | debounce1/button_stable_reg_0[0] |                1 |              1 |
 |  clk_IBUF_BUFG | uart_recv/bit_index[3]_i_1_n_0                 | debounce1/button_stable_reg_1[0] |                1 |              4 |
-|  clk_IBUF_BUFG | uart_send_sw/bit_cnt[3]_i_1_n_0                | debounce1/AR[0]                  |                2 |              4 |
 |  clk_IBUF_BUFG | string_match/uart_send/bit_cnt[3]_i_1__0_n_0   | debounce1/button_stable_reg_0[0] |                2 |              4 |
 |  clk_IBUF_BUFG | string_match/uart_recv/bit_index[3]_i_1__0_n_0 | debounce1/button_stable_reg_0[0] |                1 |              4 |
+|  clk_IBUF_BUFG | uart_send_sw/bit_cnt[3]_i_1_n_0                | debounce1/AR[0]                  |                2 |              4 |
 |  clk_IBUF_BUFG | debounce3/E[0]                                 | debounce1/AR[0]                  |                2 |              8 |
 |  clk_IBUF_BUFG |                                                |                                  |                5 |             11 |
 |  clk_IBUF_BUFG |                                                | digit_display/clear              |                5 |             17 |
